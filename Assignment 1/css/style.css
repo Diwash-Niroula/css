@@ -1,0 +1,81 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.8em;
+    color: #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Jaro', cursive;
+}
+
+article {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 850px;
+    padding: 30px;
+    border: 1px solid #b2ebf2;
+}
+
+section {
+    padding: 20px;
+    position: relative;
+    background: url('/img/1.jpg') no-repeat center center;
+    background-size: cover; /* Make the background image cover the entire section */
+    color: #34495e;
+    border-radius: 12px;
+}
+
+section img {
+    display: block;
+    width: 100%; /* Make the image fill the entire section */
+    height: auto;
+    border-radius: 12px;
+}
+
+section p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #34495e;
+    margin-bottom: 25px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.key-line {
+    font-family: 'Pacifico', cursive; /* Use a different font for emphasis */
+    color: #2c3e50;
+}
+
+section p br {
+    display: none;
+}
+
+audio {
+    display: block;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 8px;
+    border: 2px solid #b2ebf2;
+}
+
+@media (min-width: 768px) {
+    section p {
+        font-size: 1.5em;
+    }
+
+    section p br {
+        display: inline;
+    }
+}
