@@ -1,0 +1,207 @@
+/* Basic styles for body and html */
+body, html {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Poppins', sans-serif; /* Set the font family */
+    background-color: #f4f4f9; /* Light grey background color */
+    color: #333; /* Dark grey text color */
+}
+
+/* Styles for the navigation bar */
+nav {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space out logo and navigation items */
+    align-items: center; /* Align items vertically */
+    padding: 10px 20px; /* Add padding around the navigation */
+    background-color: #ff6b6b; /* Pink background color */
+}
+
+.logo {
+    font-weight: 700; /* Bold font weight */
+    font-size: 1.5em; /* Larger font size for logo */
+    color: white; /* White text color for logo */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Use flexbox layout for navigation items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space out navigation items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text color for links */
+    font-weight: 600; /* Semi-bold font weight */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #ffa7a7; /* Light pink color on hover */
+}
+
+/* Styles for sections */
+.section {
+    display: none; /* Hide sections by default */
+    padding: 40px 20px; /* Add padding around sections */
+}
+
+.active {
+    display: block; /* Show the active section */
+}
+
+/* Styles for the hero section */
+.hero {
+    background-color: #ff6b6b; /* Pink background color */
+    color: white; /* White text color */
+    padding: 100px 20px; /* Add padding around the hero section */
+    text-align: center; /* Center text alignment */
+}
+
+.hero h1 {
+    font-size: 2.5em; /* Large font size for main heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.hero p {
+    font-size: 1.2em; /* Slightly larger font size for the paragraph */
+}
+
+/* Styles for other sections */
+#collection, #choose-us, #contact {
+    background-color: #f7f7f7; /* Light grey background color */
+    padding: 50px 20px; /* Add padding around these sections */
+}
+
+h2 {
+    font-size: 2em; /* Large font size for subheadings */
+    margin-bottom: 20px; /* Space below the subheading */
+    text-align: center; /* Center text alignment */
+}
+
+/* Styles for the image gallery */
+.image-gallery {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-around; /* Space out gallery items */
+    flex-wrap: wrap; /* Wrap items onto multiple lines */
+}
+
+.image-gallery figure {
+    margin: 10px; /* Space around each figure */
+    text-align: center; /* Center text alignment for captions */
+    max-width: 200px; /* Limit the width of each figure */
+}
+
+.gallery-image {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+    width: 150px; /* Fixed width for images */
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+}
+
+/* Styles for the video container */
+.video-container {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center video horizontally */
+    margin: 20px 0; /* Add vertical margins */
+}
+
+video {
+    max-width: 100%; /* Ensure video doesn't exceed container width */
+    border-radius: 10px; /* Rounded corners for the video */
+}
+
+/* Styles for the contact section */
+.contact-wrapper {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space out contact info and form */
+    align-items: flex-start; /* Align items to the start */
+    flex-wrap: wrap; /* Wrap items onto multiple lines */
+    gap: 40px; /* Space between items */
+    max-width: 1000px; /* Limit the width of the wrapper */
+    margin: 0 auto; /* Center the wrapper horizontally */
+    padding: 20px; /* Add padding inside the wrapper */
+    background-color: #fff; /* White background color */
+    border-radius: 10px; /* Rounded corners for the wrapper */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.contact-info {
+    flex: 1; /* Allow contact info to take up available space */
+    text-align: center; /* Center text alignment */
+    color: #444; /* Dark grey text color */
+    margin-bottom: 20px; /* Space below contact info */
+}
+
+.company-logo {
+    max-width: 150px; /* Limit the width of the company logo */
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+.contact-info p {
+    margin: 5px 0; /* Space above and below paragraphs */
+    font-size: 1em; /* Standard font size for contact info */
+}
+
+.contact-form {
+    flex: 2; /* Allow contact form to take up more space */
+}
+
+form {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange form elements in a column */
+    justify-content: center; /* Center form elements */
+    align-items: center; /* Center form elements horizontally */
+}
+
+.form-group {
+    width: 100%; /* Full width for form groups */
+    margin-bottom: 15px; /* Space below form groups */
+    text-align: left; /* Left-align text inside form groups */
+}
+
+label {
+    display: block; /* Block display for labels */
+    font-weight: bold; /* Bold font weight for labels */
+    margin-bottom: 5px; /* Space below labels */
+    color: #555; /* Medium grey color for labels */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width for input fields */
+    padding: 12px; /* Padding inside input fields */
+    border: 1px solid #ddd; /* Light border color */
+    border-radius: 5px; /* Rounded corners for input fields */
+    font-size: 1em; /* Standard font size */
+    color: #333; /* Dark grey text color */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of text areas */
+}
+
+button[type="submit"] {
+    padding: 12px 20px; /* Padding inside the button */
+    background-color: #ff6b6b; /* Pink background color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    font-weight: bold; /* Bold font weight for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effects */
+}
+
+button[type="submit"]:hover {
+    background-color: #ffa7a7; /* Light pink background color on hover */
+    color: white; /* White text color on hover */
+}

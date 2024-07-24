@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta charset for character encoding -->
+    <meta charset="UTF-8">
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta description for SEO -->
+    <meta name="description" content="Homepage for your favorite candy.">
+    <!-- Title of the webpage -->
+    <title>Sweet Tooth Delight</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Raleway:wght@400;700&family=Montserrat:wght@400;700&family=Sevillana&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Logo for the navigation bar -->
+            <div class="logo">Sweet Tooth Delight</div>
+            <ul>
+                <!-- Navigation links with onclick events to show different sections -->
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('collection')">Our Candy Collection</a></li>
+                <li><a href="#" onclick="showSection('choose-us')">Why Choose Us?</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Home section with a hero image and welcome message -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <h1>Welcome to Sweet Tooth Delight</h1>
+                <p>Your one-stop destination for the best candy in town!</p>
+            </div>
+        </section>
+        
+        <!-- Candy collection section with images and descriptions -->
+        <section id="collection" class="section">
+            <h2>Our Candy Collection</h2>
+            <div class="image-gallery">
+                <figure>
+                    <img src="img/2.img.png" alt="Stikadinho Morango" class="gallery-image">
+                    <figcaption>Stikadinho Morango</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/3.jpg" alt="Candy Image 2" class="gallery-image">
+                    <figcaption>Chocolate Stikadinho Morango</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/4.jpeg" alt="Candy Image 3" class="gallery-image">
+                    <figcaption>Kit Stikadinho Morango</figcaption>
+                </figure>
+            </div>
+            <p>Explore our wide range of candies, from chocolates to gummies. We have something for every sweet tooth!</p>
+        </section>
+        
+        <!-- Section explaining why to choose the company with a promotional video -->
+        <section id="choose-us" class="section">
+            <h2>Why Choose Us?</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="mp4/candy_promo.mp4" type="video/mp4">
+                    <!-- Message displayed if the video tag is not supported -->
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p>Watch our promo video to see why we are the best choice for all your candy needs.</p>
+        </section>
+        
+        <!-- Contact section with company details and a contact form -->
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <!-- Company logo and contact details -->
+                    <img src="img/1.webp" alt="Company Logo" class="company-logo">
+                    <p><strong>Sweet Tooth Delight</strong></p>
+                    <p>123 Candy Lane, Candyville</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@sweettoothdelight.com</p>
+                </div>
+                <div class="contact-form">
+                    <!-- Contact form for user inquiries -->
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Contact Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Your contact number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address" placeholder="Your address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email:</label>
+                            <input type="email" id="contact-email" name="contact-email" placeholder="Your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Function to show the selected section and hide others
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            
+            // Show the clicked section
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>
